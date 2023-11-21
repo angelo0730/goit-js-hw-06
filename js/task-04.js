@@ -1,7 +1,7 @@
 class Counter {
   constructor(selector, step, initialValue) {
     this.counterContainer = document.querySelector(selector);
-    this.incrementBtn = this.counterContainer.querySelector("[data-action='increment']");
+    this.incrementBtn = this.counterContainer.querySelector("[data+action='increment']");
     this.dicrementBtn = this.counterContainer.querySelector("[data-action='decrement']");
     this.spanRef = this.counterContainer.querySelector('#value');
     this.step = step;
